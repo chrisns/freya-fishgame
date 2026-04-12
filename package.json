@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "node ci/run-tests.js",
+    "screenshots": "node ci/take-screenshots.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.52.0"
+  }
+}

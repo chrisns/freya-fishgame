@@ -4,6 +4,8 @@
 
 Dive into the ocean as a scuba diver and squish as many fish as you can! But watch out -- some fish bite back, and the sea is full of dangers.
 
+![Menu](screenshots/menu.png)
+
 ## How to play
 
 - **Arrow keys** (up, down, left, right) to swim
@@ -22,13 +24,33 @@ Dive into the ocean as a scuba diver and squish as many fish as you can! But wat
 - **Freezeballs** freeze enemies for 5 seconds so you can squish them safely
 - There are **6 levels**, each a different colour, with more enemies and obstacles
 
+![Gameplay](screenshots/gameplay.png)
+
+## Customise your diver
+
+Pick colours for your suit, mask, flippers and tank before you dive in.
+
+![Customise](screenshots/customise.png)
+
+## High scores
+
+Top 10 scores are saved in your browser and persist between sessions.
+
+![High Scores](screenshots/highscores.png)
+
 ## Running
 
 Open `index.html` in a browser. No build step, no dependencies.
 
 ## Tests
 
-Open `test.html` in a browser to run the test suite.
+Open `test.html` in a browser, or run headless via:
+
+```
+npm install
+npx playwright install chromium
+npm test
+```
 
 ## Credits
 
