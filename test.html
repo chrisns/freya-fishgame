@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Squishy Fish — Tests</title>
+  <style>
+    body {
+      font-family: -apple-system, system-ui, monospace;
+      background: #0a1128;
+      color: #eee;
+      padding: 20px 30px;
+      line-height: 1.5;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 { color: #ffee44; margin-bottom: 4px; }
+    .subtitle { color: #88aacc; font-size: 13px; margin-bottom: 20px; }
+    .summary {
+      font-size: 22px;
+      margin: 16px 0;
+      padding: 14px 20px;
+      background: #1a2340;
+      border-radius: 8px;
+      border-left: 6px solid #666;
+    }
+    .summary.ok { border-left-color: #44ff88; color: #aaffcc; }
+    .summary.fail { border-left-color: #ff4466; color: #ffaabb; }
+    .group { margin: 18px 0 6px; color: #ffcc88; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+    .test { padding: 3px 0; font-family: "SF Mono", Menlo, monospace; font-size: 13px; }
+    .pass { color: #66ff88; }
+    .fail { color: #ff6677; }
+    .err { color: #ffaabb; margin-left: 20px; font-size: 12px; }
+    #game { display: none; }
+    code { background: #1a2340; padding: 1px 5px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="800" height="600"></canvas>
+  <h1>Squishy Fish — Test Suite</h1>
+  <div class="subtitle">Run with: open <code>test.html</code> in a browser. Tests run automatically.</div>
+  <div id="summary" class="summary">Running tests…</div>
+  <div id="results"></div>
+  <script>window.SQUISHY_TEST_MODE = true;</script>
+  <script src="game.js"></script>
+  <script src="test.js"></script>
+</body>
+</html>
